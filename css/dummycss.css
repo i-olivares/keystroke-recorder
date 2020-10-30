@@ -1,0 +1,14 @@
+h1{font-size: 30px; text-transform: uppercase; letter-spacing: 2px; text-align: left;}
+h2{font-size: 15px; text-transform: uppercase; letter-spacing: 2px; text-align: left;}
+p{font-size: 12px; letter-spacing: 1px; text-align: left;}
+
+#input{
+	width: 230px;
+	height: 25px;
+}
+#submit{
+	font-size: 12px;
+	width: 60px;
+	height: 20px;
+	margin-left: 15px;
+}

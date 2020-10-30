@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo Website</title>
+	<link rel="stylesheet" href="css/dummycss.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<style type="text/css">
+
+		div.bar {
+			display: inline-block;
+			width: 20px;
+			height: 75px;
+			background-color: teal;
+			margin-right: 2px;
+		}
+
+	</style>
+
+</head>
+<body>
+	<div>
+		<h1>Small Input Test:</h1>
+	</div>
+	<div>
+		<input id="email" label="Email: " type="email" name="inputEmail" placeholder="Email goes here">
+		<input id="password" label="Password: " type="password" name="inputPassword" placeholder="Password goes here">
+		<input id="submit" type="submit" name="submitButton" value="Submit" onclick="outputData()"></input>
+	</div>
+	<div>
+		<h2></h2>
+		<h2></h2>
+		<h2> <br/> <br/>typping patterns:</h2>
+	</div>
+	<div>
+		<p>Email pattern:</p>
+	</div>
+	<div>
+		<textarea type="typingpattern" id="emailpattern" cols="85" rows="5" ></textarea>
+	</div>
+	<div>
+		<p>Password pattern:</p>
+	</div>
+	<div>
+		<textarea type="typingpattern" id="passwordpattern" cols="85" rows="5" ></textarea>
+	</div>
+	<div>
+		<a download="record.txt" id="downloadlink" style="display: none">Download typping patterns</a>
+	</div>
+	<div>
+		<h2><br/> <br/>Email pattern graph:<br/> <br/></h2>
+	</div>
+	<div id="graph">
+	</div>
+</body>
+<script type="text/javascript" src="key-recorder.js"></script>
+</html>
